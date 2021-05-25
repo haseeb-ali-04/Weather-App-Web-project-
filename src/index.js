@@ -30,6 +30,12 @@ app.get("/weather", (req, res)=>{
     res.render("weather")
 })
 
+app.get("*", (req, res) =>{
+    res.render("404", {
+        ErrorMsg : "Oops! Page doesn't exist"
+    })
+})
+
 app.listen(port,()=>{
     console.log("running at port "+port);
 })
