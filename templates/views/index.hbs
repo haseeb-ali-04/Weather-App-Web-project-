@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9a4068c39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App Project</title>
+</head>
+
+
+<body>
+    {{>navbar}}
+    <div class="container">
+        <div class="homePageInfo">
+            <h6>Weather Page by {{owner}},</h6>
+            <div class="blah">
+                <h4>Know your State/City Weather</h4>
+            </div>
+            <button class="weatherbtn"><a href="/weather">Check Weather</a> </button>
+        </div>
+        <div class="clock">
+            <div class="box">
+                <h1><b id="clock"></b></h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    var myFunc =()=>{
+        let date = new Date()
+        document.getElementById('clock').innerHTML = date.toLocaleTimeString()
+    }
+    setInterval(myFunc, 10)
+
+</script>
+
+</html>

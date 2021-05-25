@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a9a4068c39.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+</head>
+
+
+<body>
+    {{>navbar}}
+    <div class="weatherPage">
+        <div class="searchBar">
+            <input id="input" type="text" placeholder="Enter Your City Name....">
+            <button id="submitBtn" class="searchbtn">Search</button>
+        </div>
+
+        <div class="showWeather">
+            <div class="Weatherbox">
+                <div class="weatherBoxNav">
+                    <h6 id="date">5/25/2021</h6>
+                    <h6 id="time">5/25/2021</h6>
+                </div>
+                <div class="weather" id="weather">
+                    <h3 id="CityName"> </h3>
+                    <h1 id="temp">0&deg;C </h1>
+                    <div class="anotherInfo">
+                        <h4>Min. Temp : <b id="min_temp">0&deg;C</b></h4>
+                        <h4>Max. Temp : <b id="max_temp">0&deg;C</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+<script>
+    var myFunc = () => {
+        let date = new Date()
+        document.getElementById('time').innerHTML = date.toLocaleTimeString()
+        document.getElementById('date').innerHTML = date.toLocaleDateString()
+    }
+    setInterval(myFunc, 10)
+</script>
+<script src="/js/main.js"></script>
+
+</html>
