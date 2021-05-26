@@ -1,9 +1,6 @@
-/* @import url('../node_modules/font-awesome/css/font-awesome.min.css'); */
-
-
-
 * {
     padding: 0;
+    font-family: system-ui;
     margin: 0;
 }
 
@@ -171,4 +168,92 @@
 
 .anotherInfo {
     margin: 22px 0px 0px 3px;
+}
+
+
+
+@media (min-width : 375px) and (max-width: 425px) {
+    .container{
+        display: block;
+        margin: 3rem;
+        font-size: 29px;
+    }
+    .clock{
+        margin-top: 3rem;
+        font-size: 22px;
+    }
+
+    .navbar nav {
+        display: contents;
+    }
+
+    .navbar nav ul {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+}
+
+
+
+@media (max-width : 320px) and (max-width : 375px){
+    .container{
+        display: block;
+        margin: 3rem;
+        font-size: 29px;
+    }
+    .clock{
+        margin-top: 3rem;
+        font-size: 18px;
+    }
+
+    .navbar nav {
+        display: contents;
+    }
+
+    .navbar nav ul {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .searchBar input{
+        width: 13rem;
+    }
+    .searchbtn{
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .clock{
+        margin: 4rem auto;
+    width: auto;
+    display: flex;
+    }
+    .container{
+        display: block;
+    }
 }
