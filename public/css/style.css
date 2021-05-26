@@ -208,7 +208,7 @@
 
 
 
-@media (max-width : 320px) and (max-width : 375px){
+@media (min-width : 320px) and (max-width : 375px){
     .container{
         display: block;
         margin: 3rem;
@@ -216,7 +216,7 @@
     }
     .clock{
         margin-top: 3rem;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .navbar nav {
@@ -248,12 +248,39 @@
 
 
 @media (min-width: 425px) and (max-width: 768px) {
-    .clock{
-        margin: 4rem auto;
-    width: auto;
-    display: flex;
-    }
+    
     .container{
         display: block;
+        margin: 3rem;
+        font-size: 29px;
+    }
+    .clock{
+        margin-top: 3rem;
+        font-size: 15px;
+    }
+
+    .navbar nav {
+        display: contents;
+    }
+
+    .navbar nav ul {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .searchBar input{
+        width: 13rem;
+    }
+    .searchbtn{
+        font-size: 15px;
     }
 }

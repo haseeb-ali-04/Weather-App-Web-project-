@@ -13,7 +13,7 @@ const getInfo =  async () =>{
 
     }else{
         try {
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${InpValue}&units=metric&appid=1adf1279d1c27a819f35083d76899179`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${InpValue}&units=metric&appid=1adf1279d1c27a819f35083d76899179`
             let response  = await fetch(url)
             let data = await response.json()
             let realData = await [data]
